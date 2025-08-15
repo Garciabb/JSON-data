@@ -88,7 +88,62 @@
             </ul>
         </section>
     </div>
+<footer>
 
-    <script src="script.js"></script>
+</footer>
+<script src="script.js">
+
+</script>
+    <script>
+        let Morral={
+            "color" : "azul",
+            "tamaño" : "mediano",
+        "contenido" : [
+            {
+
+                "tipo" : "libro",
+                "titulo" : "Aprendiendo Java",
+                "autor" : "juan perez"
+ 
+            },
+
+            { "tipo" : "libro",
+            "titulo" : "dune",
+            "autor:Frank herbert"
+            }
+        
+        ]
+{
+    console.log(Morral);
+    document.getElementById("miMorral").style.color=morral.color;
+    if (morral.tamaño === "pequeño") {
+        document.getElementById("miMorral").style.fontSize = "0.5rem";
+    }else if ( morral.tamaño === "Mediano"){
+        document.getElementById("miMorral").style.fontSize = "1rem";
+        document.getElementById("miMorral").style.color=morral.color;
+    if (morral.tamaño === "Grande") {
+        document.getElementById("miMorral").style.fontSize = "2rem";
+    }
+    document.getElementById("colormorral").innerHTML = "color del morral" $(morral.color);
+
+    document.getElementById("colormorral").innerHTML = morral.contenido.map(item=>) {
+        return ´<p>${item.tipo}: ${item.titulo} por ${item.autor}</p>´;
+
+    }).join(´´);
+    }
+}
+
+
+
+
+
+
+
+
+
+    </script>
+    <script src="script.js">
+    
+</script>
 </body>
 </html>
